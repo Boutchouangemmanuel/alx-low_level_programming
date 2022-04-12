@@ -1,4 +1,4 @@
-#include <sdtio.h>
+#include <stdio.h>
 /**
  * main - entry point
  *
@@ -16,4 +16,3 @@ putchar("\n");
 
 return (0);
 }
-
