@@ -1,41 +1,46 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
+
+/* betty style doc for function main goes there */
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success/completed)
+ * Return: Always 0 (Success)
  */
 int main(void)
-
 {
-int number_left;
-int number_right;
+	int i;
+	int j;
 
+	i = 48;
+	j = 49;
+	while  ((i < 57) && (j < 58))
+	{
+		putchar(i);
+		putchar(j);
+		if ((i == 56) && (j == 57))
+		{
+			putchar('\n');
+			i++;
+			j++;
+		}
+		else
+		{
+			putchar(44);
+			putchar(32);
+			if (j < 57)
+			{
+				j++;
+			}
+			else
+			{
+				i++;
+				j = 1 + i;
+			}
+		}
 
-for (number_left = 48; number_right <= 78; number_left++)
-{
-for (number_right = number_left + 1 ; number_right <= 78; number_right++)
-{
+	}
 
-putchar(number_left);
-putchar (number_right);
-
-
-if ((number_left == 56) && (number_right == 78))
-{
-break;
-}
-
-putchar(',');
-putchar (' ');
-
-}
-
-}
-
-putchar('\n');
-
-
-return (0);
-
-
+	return (0);
 }
