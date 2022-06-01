@@ -1,5 +1,3 @@
-es (36 sloc)  897 Bytes
-   
 /*
  * File: 0-read_textfile.c
  * Yovo, Koffi Vianney
